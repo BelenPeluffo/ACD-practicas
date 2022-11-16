@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="assistance.js"></script>
+    <style>
+        body {
+            margin-top: 2em;
+        }
+    </style>
+    <title>Ejercicios JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 border rounded px-4 py-3">
+                <form>
+                    <div class="form-group">
+                        <label class="form-label" for="cliente">Nombre del cliente</label>
+                        <input type="text" class="form-control form-control-sm" id="cliente">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="material">Material de la caja</label>
+                        <select class="form-select" id="material">
+                            <option value="madera">Madera</option>
+                            <option value="carton">Cartón</option>
+                            <option value="papel">Papel</option>
+                            <option value="vidrio">Vidrio</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Dimensiones de la caja</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dimension" value="diminuta" checked>
+                            <label class="form-check-label" for="diminuta">Diminuta</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dimension" value="mediana">
+                            <label class="form-check-label" for="mediana">Mediana</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="dimension" value="grande">
+                            <label class="form-check-label" for="grande">Grande</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="comentarios">Comentarios</label>
+                        <textarea class="form-control" id="comentario" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Acá irá el resultado" id="resultado" readonly></textarea>
+                    </div>
+                    <input id="boton" type="button" value="Enviar" class="btn-primary" onclick="mostrarResultado()"/>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
