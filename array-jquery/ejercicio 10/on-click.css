@@ -1,0 +1,25 @@
+p:hover {
+    background: blueviolet;
+}
+
+.resaltado {
+    background-color: coral;
+}
+
+.original {
+    background-color: coral;
+    width: 800px;
+    height: 70px;
+}
+
+.redimension {
+    width: 250px;
+    height: 250px;
+}
+
+#facha {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height:0.9em;
+}
