@@ -89,4 +89,17 @@ $(document).ready(function(){
     $("#tu-signo").change(function() {
         console.log($(this).val());
     })
+
+    //EJERCICIO 23
+    $("#no-se-mueve-mas").click(function() {
+        event.preventDefault();
+        console.log($(this).attr("href"));
+    })
+
+    //EJERCICIO 24
+    //Tomemos el nombre y el signo, y digámosle que el formulario ya se envió.
+    $("#no-se-manda-mas").click(function() {
+        event.preventDefault();
+        $(this).after("<p class='my-2'>El formulario se envío (de mentiritas).</p>")
+    })
   });
