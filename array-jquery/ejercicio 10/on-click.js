@@ -85,7 +85,7 @@ $(document).ready(function(){
         })
     }
 
-    //EJERCICIO 21
+    //EJERCICIO 22
     $("#tu-signo").change(function() {
         console.log($(this).val());
     })
